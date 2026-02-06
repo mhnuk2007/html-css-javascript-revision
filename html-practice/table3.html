@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Example</title>
+  <style>
+    /* Table Styles */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      font-family: sans-serif;
+    }
+    th, td {
+      border: 2px solid #999;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    /* Optional: Highlight row headers */
+    td:first-child, th:first-child {
+      font-weight: bold;
+      background-color: #e6f7ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="text-align:center;">Tech Blog Table Example</h1>
+  </header>
+
+  <main>
+    <table>
+      <caption>Weekly Schedule</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Morning</th>
+          <td>HTML Practice</td>
+          <td>CSS Layout</td>
+          <td>JavaScript Basics</td>
+        </tr>
+        <tr>
+          <th>Afternoon</th>
+          <td>React Tutorial</td>
+          <td>Spring Boot API</td>
+          <td>Project Work</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Plan your learning and stay consistent!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer style="text-align:center;">
+    <p>© 2026 Tech Blog</p>
+  </footer>
+
+</body>
+</html>
