@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Example</title>
+</head>
+<body>
+
+  <!-- Global Navigation / Main Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="services.html">Services</a>
+        <!-- Sub-menu -->
+        <ul>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="app-development.html">App Development</a></li>
+          <li><a href="seo.html">SEO</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="index.html">Home</a> &gt;</li>
+      <li><a href="services.html">Services</a> &gt;</li>
+      <li>Web Development</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>This page demonstrates different types of navigation in HTML.</p>
+
+    <!-- In-Page Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1">
+      <h2>Section 1: Introduction</h2>
+      <p>This is the introduction section of the page.</p>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2: Services Overview</h2>
+      <p>Details about the services we provide.</p>
+    </section>
+
+    <section id="section3">
+      <h2>Section 3: Contact Information</h2>
+      <p>You can reach us at <a href="mailto:info@example.com">info@example.com</a> or call <a href="tel:+1234567890">+1 234 567 890</a>.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 My Website</p>
+  </footer>
+
+</body>
+</html>
