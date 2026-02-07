@@ -1,0 +1,15 @@
+#highlight {
+    background-color: yellow;
+}
+.special-text {
+    color: blue;
+    font-style: italic;
+}
+.highlight {
+    background-color: pink;
+}
+
+.special-text.highlight {
+    color: red;
+
+}
