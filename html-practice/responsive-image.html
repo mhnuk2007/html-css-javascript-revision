@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Experiment</title>
+</head>
+<body>
+
+  <h2>Same Image – Sizes Experiment</h2>
+  <p>Resize the browser window to see how the image adapts.</p>
+
+  <img
+    src="https://picsum.photos/id/237/800/500"
+    srcset="
+      https://picsum.photos/id/237/800/500 400w,
+      https://picsum.photos/id/237/800/500 800w,
+      https://picsum.photos/id/237/800/500 1200w
+    "
+    sizes="
+      (max-width: 600px) 90vw,
+      (max-width: 1000px) 60vw,
+      40vw
+    "
+    alt="Sample Dog Image"
+  >
+
+</body>
+</html>
