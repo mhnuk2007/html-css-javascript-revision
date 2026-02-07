@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Elements Attributes Demo</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Media Elements Demo</h1>
+    <p>Video and Audio examples with attributes</p>
+  </header>
+
+  <main>
+
+    <!-- Video Section -->
+    <section>
+      <h2>Video Example</h2>
+      <video 
+        src="videos/sample-video.mp4" 
+        controls 
+        autoplay 
+        muted 
+        loop 
+        preload="auto" 
+        width="640" 
+        height="360">
+        <source src="videos/sample-video.webm" type="video/webm">
+        <track src="videos/sample-captions.vtt" kind="subtitles" srclang="en" label="English" default>
+        Your browser does not support the video tag.
+      </video>
+      <p>Attributes used: <code>controls, autoplay, muted, loop, preload, width, height, multiple sources, captions</code></p>
+    </section>
+
+    <!-- Audio Section -->
+    <section>
+      <h2>Audio Example</h2>
+      <audio 
+        src="audio/sample-audio.mp3" 
+        controls 
+        autoplay 
+        loop 
+        muted 
+        preload="auto">
+        <source src="audio/sample-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Attributes used: <code>controls, autoplay, loop, muted, preload, multiple sources</code></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Media Demo</p>
+  </footer>
+
+</body>
+</html>
