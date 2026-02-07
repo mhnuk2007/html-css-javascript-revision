@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Audio Attributes Example</title>
+</head>
+<body>
+
+  <header>
+    <h1>Audio Element Full Example</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Multiple Formats with Controls</h2>
+      <p>This audio uses multiple sources for cross-browser support:</p>
+
+      <audio 
+        controls 
+        preload="auto" 
+        autoplay 
+        loop 
+        muted 
+        title="Sample Music Track" 
+        mediagroup="music" 
+        controlslist="nodownload noplaybackrate"
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+        
+        <source src="audio/sample.mp3" type="audio/mpeg">
+        <source src="audio/sample.ogg" type="audio/ogg">
+        <source src="audio/sample.wav" type="audio/wav">
+        <source src="audio/sample.aac" type="audio/aac">
+        <source src="audio/sample.webm" type="audio/webm">
+        
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Simple Audio Example</h2>
+      <p>Audio with just basic controls:</p>
+
+      <audio src="audio/simple.mp3" controls>
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Audio Demo</p>
+  </footer>
+
+</body>
+</html>
