@@ -10,6 +10,10 @@
 }
 
 .special-text.highlight {
-    color: red;
+    border: 2px solid black;
+    padding: 10px;
+}
 
+h2.special-text {
+    color: red;
 }

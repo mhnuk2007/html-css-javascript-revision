@@ -1,0 +1,11 @@
+article p {
+    color: green;
+}
+
+article section p {
+    color: pink
+}
+
+.container p {
+    color: orange;
+}
