@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Example</title>
+</head>
+<body>
+
+  <header>
+    <h1>Audio Element Demo</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Background Music</h2>
+      <p>Listen to this audio using the default browser controls:</p>
+      
+      <!-- Audio with controls -->
+      <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        <source src="audio/music.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Autoplay & Loop</h2>
+      <p>This audio will start automatically and loop forever:</p>
+      
+      <audio src="audio/loop-sound.mp3" autoplay loop>
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Muted Audio</h2>
+      <p>This audio is muted by default:</p>
+      
+      <audio src="audio/muted-sound.mp3" controls muted>
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Audio Demo</p>
+  </footer>
+
+</body>
+</html>
