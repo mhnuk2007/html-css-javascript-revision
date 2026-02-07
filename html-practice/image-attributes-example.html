@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Attributes Example</title>
+</head>
+<body>
+
+<header>
+  <h1>HTML Image Attributes Demo</h1>
+</header>
+
+<main>
+
+  <!-- Basic Image -->
+  <section>
+    <h2>Basic Image</h2>
+    <img 
+      src="https://picsum.photos/300/200" 
+      alt="Random landscape photo"
+    >
+  </section>
+
+  <!-- Width & Height -->
+  <section>
+    <h2>Width & Height</h2>
+    <img 
+      src="https://picsum.photos/400/250" 
+      alt="Sample resized image"
+      width="300"
+      height="180"
+    >
+  </section>
+
+  <!-- Title Attribute -->
+  <section>
+    <h2>Title Attribute (Tooltip)</h2>
+    <img 
+      src="https://picsum.photos/350/200" 
+      alt="Hover to see tooltip"
+      title="This text appears on hover"
+    >
+  </section>
+
+  <!-- Lazy Loading -->
+  <section>
+    <h2>Lazy Loading</h2>
+    <p>Image loads only when scrolled into view.</p>
+    <img 
+      src="https://picsum.photos/500/300" 
+      alt="Lazy loaded image"
+      loading="lazy"
+      width="400"
+    >
+  </section>
+
+  <!-- Responsive Image (srcset & sizes) -->
+  <section>
+    <h2>Responsive Image</h2>
+    <img 
+      src="https://picsum.photos/600/300"
+      alt="Responsive example image"
+      srcset="
+        https://picsum.photos/300/150 300w,
+        https://picsum.photos/600/300 600w,
+        https://picsum.photos/900/450 900w
+      "
+      sizes="(max-width: 600px) 90vw, 600px"
+    >
+  </section>
+
+  <!-- Figure and Figcaption -->
+  <section>
+    <h2>Figure with Caption</h2>
+    <figure>
+      <img 
+        src="https://picsum.photos/id/1015/500/300"
+        alt="Mountain view with lake"
+        width="500"
+      >
+      <figcaption>Mountain landscape with a lake</figcaption>
+    </figure>
+  </section>
+
+  <!-- Link Wrapped Image -->
+  <section>
+    <h2>Clickable Image</h2>
+    <a href="https://picsum.photos/1000/600" target="_blank">
+      <img 
+        src="https://picsum.photos/300/180"
+        alt="Click to open large version"
+        title="Open full size image"
+      >
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Image Practice</p>
+</footer>
+
+</body>
+</html>
