@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images - Picture Tag</title>
+</head>
+<body>
+
+  <h2>Responsive Image with &lt;picture&gt;</h2>
+  <p>Resize the browser to see different images load.</p>
+
+  <picture>
+
+    <!-- Large Screens -->
+    <source 
+      media="(min-width: 1000px)" 
+      srcset="https://picsum.photos/id/1015/1200/700"
+    >
+
+    <!-- Medium Screens -->
+    <source 
+      media="(min-width: 600px)" 
+      srcset="https://picsum.photos/id/1015/800/500"
+    >
+
+    <!-- Small Screens / Fallback -->
+    <img 
+      src="https://picsum.photos/id/1015/400/300" 
+      alt="Mountain Landscape"
+    >
+<p></p>
+  </picture>
+  <!--Another Use – Different Formats (Performance)-->
+  <picture>
+  <source srcset="image.webp" type="image/webp">
+  <source srcset="image.jpg" type="image/jpeg">
+  <img src="image.jpg" alt="Sample Image">
+</picture>
+
+</body>
+</html>
