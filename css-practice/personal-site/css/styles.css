@@ -1,0 +1,37 @@
+/* Custom Properties
+-------------------------------------*/
+:root {
+
+    --darkgray: #333333;
+    --whitesmoke: #F5F5F5;
+    --darkslateblue: #483D8B;
+
+    --color-dark: var(--darkgray);
+    --color-light: var(--whitesmoke);
+    --color-primary: var(--darkslateblue);
+}
+
+/* Global Styles 
+--------------------------------------*/
+body {
+    background-color: dodgerblue;
+}
+
+/* Header + Nav
+--------------------------------------*/
+
+
+/* About
+---------------------------------------*/
+
+
+/* Projects
+---------------------------------------*/
+
+
+/* Resume
+---------------------------------------*/
+
+
+/* Footer
+---------------------------------------*/
