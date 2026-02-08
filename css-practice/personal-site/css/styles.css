@@ -33,6 +33,10 @@ a {
     color: var(--color-dark);
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 .bg-dark a, .bg-primary a {
     color: var(--color-light);
 }
@@ -57,10 +61,16 @@ a {
     margin: 0;
 }
 
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
 /* Header + Nav
 --------------------------------------*/
 header {
-    height: 500px;
+    height: 80%;
     background-image: linear-gradient(rgb(72 61 139 / .5), rgb(72 61 139 / .5)), 
                       url(../images/bg-sunset-ocean.jpg);
     background-repeat: no-repeat;
@@ -75,6 +85,11 @@ header {
 
 /* Projects
 ---------------------------------------*/
+.project-item {
+    border: 1px solid var(--color-primary);
+    padding: 20px;
+    margin-bottom: 10px;
+}
 
 
 /* Resume
