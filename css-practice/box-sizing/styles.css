@@ -1,0 +1,18 @@
+div {
+background: lightblue;
+width: 300px;
+height: 100px;
+margin: 20px;
+padding: 20px;
+border: 15px solid black;
+}
+
+.box-1 {
+box-sizing: content-box;
+width: 230px;
+height: 30px;
+
+}
+.box-2 {
+box-sizing: border-box;
+}
