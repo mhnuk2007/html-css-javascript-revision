@@ -1,3 +1,4 @@
+
 /* Custom Properties
 -------------------------------------*/
 :root {
@@ -13,6 +14,21 @@
 
 /* Global Styles 
 --------------------------------------*/
+/* Alternative box model */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
 a {
     color: var(--color-dark);
 }
@@ -33,6 +49,12 @@ a {
 .bg-primary {
     background-color: var(--color-primary);
     color: var(--color-light);
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Header + Nav
