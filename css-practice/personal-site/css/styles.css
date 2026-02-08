@@ -13,12 +13,38 @@
 
 /* Global Styles 
 --------------------------------------*/
-body {
-    background-color: dodgerblue;
+a {
+    color: var(--color-dark);
+}
+
+.bg-dark a, .bg-primary a {
+    color: var(--color-light);
+}
+.bg-dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
 }
 
 /* Header + Nav
 --------------------------------------*/
+header {
+    height: 500px;
+    background-image: linear-gradient(rgb(72 61 139 / .5), rgb(72 61 139 / .5)), 
+                      url(../images/bg-sunset-ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-light);
+}
 
 
 /* About
