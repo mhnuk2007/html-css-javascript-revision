@@ -1,6 +1,12 @@
 section {
     background: dodgerblue;
     padding: 10px 20px;
+
+}
+
+.content-wrap {
     width: 400px;
     margin: 0 auto;
+    border: 2px solid black;
+
 }
