@@ -1,0 +1,23 @@
+p {
+    background: lightgreen;
+}
+
+span {
+    background: orange;
+}
+
+.block1 {
+    margin-bottom: 0;
+}
+
+.block2 {
+    margin-top: 0;
+}
+
+.inline1 {
+    margin-right: 0;
+}
+
+.inline2{
+    margin: -5px;
+}
