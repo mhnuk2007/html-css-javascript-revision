@@ -2,9 +2,9 @@ div {
     background: pink;
     width: 200px;
     height: 50px;
-    /* margin: 20px;
+    margin: 20px;
     padding: 40px;
-    border: 4px solid black; */
+    border: 4px solid black;
     display: inline-block;
     
 }
@@ -12,5 +12,8 @@ span{
     background: lightblue;
     width: 200px;
     height: 50px;
-    display: block;
+    margin: 20px;
+    padding: 40px;
+    border: 4px solid black;;
+    display: inline-block;
 }
