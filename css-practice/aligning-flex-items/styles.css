@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  height: 400px;
+  border: 2px solid black;
+
+  /* JUSTIFY CONTENT (Horizontal) */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* ALIGN ITEMS (Vertical) */
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+}
+
+.flex-item {
+  border: 2px solid red;
+  padding: 20px;
+  width: 60px;
+}

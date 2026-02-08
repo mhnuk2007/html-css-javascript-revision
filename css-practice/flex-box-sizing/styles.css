@@ -1,0 +1,16 @@
+.flex-container {
+display: flex;
+width: 300px;
+flex-wrap: wrap;
+/* flex-direction: column; */ 
+}
+.flex-item {
+/* flex-grow flex-shrink flex-basis */
+flex: 1 1 100px;
+box-sizing: border-box; 
+border: 2px solid red;
+}
+.item-1 {
+flex-grow: 3; 
+
+}

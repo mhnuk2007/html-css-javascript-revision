@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: darkblue;
+    }
+
+    .flex-container {
+      display: flex;
+      border: 2px solid black;
+      margin-bottom: 30px;
+      padding: 10px;
+      min-height: 80px;
+    }
+
+    .flex-item {
+      border: 2px solid red;
+      padding: 20px;
+      margin: 5px;
+      background-color: lightcoral;
+      text-align: center;
+      min-width: 50px;
+    }
+
+    /* FLEX DIRECTION */
+    .direction-row {
+      flex-direction: row;
+    }
+
+    .direction-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .direction-column {
+      flex-direction: column;
+    }
+
+    .direction-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    /* JUSTIFY CONTENT */
+    .justify-start { justify-content: flex-start; }
+    .justify-end { justify-content: flex-end; }
+    .justify-center { justify-content: center; }
+    .justify-between { justify-content: space-between; }
+    .justify-around { justify-content: space-around; }
+    .justify-evenly { justify-content: space-evenly; }
+
+    /* ALIGN ITEMS */
+    .align-start { align-items: flex-start; }
+    .align-end { align-items: flex-end; }
+    .align-center { align-items: center; }
+    .align-stretch { align-items: stretch; }
+    .align-baseline { align-items: baseline; }
+
+    /* FLEX WRAP */
+    .wrap { flex-wrap: wrap; }
+    .wrap-reverse { flex-wrap: wrap-reverse; }
+    .nowrap { flex-wrap: nowrap; }
+
+    /* FLEX SIZE */
+    .flex-grow-example .flex-item:nth-child(1) { flex-grow: 1; }
+    .flex-grow-example .flex-item:nth-child(2) { flex-grow: 2; }
+    .flex-grow-example .flex-item:nth-child(3) { flex-grow: 1; }
+
+    .flex-shrink-example .flex-item {
+      flex-shrink: 1;
+      width: 200px;
+    }
+
+    .flex-basis-example .flex-item:nth-child(1) { flex: 1 1 100px; }
+    .flex-basis-example .flex-item:nth-child(2) { flex: 1 1 150px; }
+    .flex-basis-example .flex-item:nth-child(3) { flex: 1 1 200px; }
+
+    /* ORDER */
+    .order-example .flex-item:nth-child(1) { order: 3; }
+    .order-example .flex-item:nth-child(2) { order: 1; }
+    .order-example .flex-item:nth-child(3) { order: 2; }
+
+    /* ALIGN SELF */
+    .align-self-example .flex-item:nth-child(1) { align-self: flex-start; }
+    .align-self-example .flex-item:nth-child(2) { align-self: center; }
+    .align-self-example .flex-item:nth-child(3) { align-self: flex-end; }
+  </style>
+</head>
+<body>
+
+  <h2>Flex Direction</h2>
+  <div class="flex-container direction-row">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+  <div class="flex-container direction-column">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Justify Content</h2>
+  <div class="flex-container justify-start"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div></div>
+  <div class="flex-container justify-center"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div></div>
+  <div class="flex-container justify-between"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div></div>
+  <div class="flex-container justify-around"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div></div>
+  <div class="flex-container justify-evenly"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div></div>
+
+  <h2>Align Items</h2>
+  <div class="flex-container align-start"><div class="flex-item">1</div><div class="flex-item">2 taller<br>content</div><div class="flex-item">3</div></div>
+  <div class="flex-container align-center"><div class="flex-item">1</div><div class="flex-item">2 taller<br>content</div><div class="flex-item">3</div></div>
+  <div class="flex-container align-end"><div class="flex-item">1</div><div class="flex-item">2 taller<br>content</div><div class="flex-item">3</div></div>
+  <div class="flex-container align-stretch"><div class="flex-item">1</div><div class="flex-item">2 taller<br>content</div><div class="flex-item">3</div></div>
+
+  <h2>Flex Wrap</h2>
+  <div class="flex-container wrap">
+    <div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div><div class="flex-item">4</div><div class="flex-item">5</div>
+  </div>
+
+  <h2>Flex Grow</h2>
+  <div class="flex-container flex-grow-example">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Flex Shrink</h2>
+  <div class="flex-container flex-shrink-example" style="width:400px;">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2 very long content</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Flex Basis</h2>
+  <div class="flex-container flex-basis-example">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Order</h2>
+  <div class="flex-container order-example">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Align Self</h2>
+  <div class="flex-container align-self-example" style="height:100px;">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+</body>
+</html>
