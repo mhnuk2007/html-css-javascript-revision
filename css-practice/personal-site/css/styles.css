@@ -78,6 +78,15 @@ header {
     color: var(--color-light);
 }
 
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+.nav-list a {
+    padding: 20px;
+    display: inline-block;
+}
+
 
 /* About
 ---------------------------------------*/
@@ -98,3 +107,19 @@ header {
 
 /* Footer
 ---------------------------------------*/
+footer {
+    text-align: center;
+    padding: 60px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+.social-list a {
+    padding: 10px;
+}
+.social-list img {
+    width: 35px;
+    margin: 15px;
+}
