@@ -7,6 +7,10 @@ console.log(typeof name); // "string"
 let isActive = true;
 console.log(typeof isActive); // "boolean"
 
+let symbolValue = Symbol("Honey");
+console.log(typeof symbolValue); // "symbol"
+
+
 let person = {name: "Honey"};
 console.log(typeof person); // "object"
 
