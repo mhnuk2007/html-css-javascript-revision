@@ -6,3 +6,6 @@ let name = "Honey";   // Global (outer scope)
 }
 
 console.log(name);
+
+// let and const are block scoped
+// var is function scoped
