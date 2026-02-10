@@ -13,3 +13,5 @@ const name2 = "Honey";
 //const name2 = "Honey Chauhan"; //not allowed 
 //name2 = "Honey Chauhan"; //not allowed
 console.log(name2);
+
+
