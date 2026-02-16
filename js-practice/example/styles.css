@@ -1,0 +1,89 @@
+/* Reset some defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+/* Header Container */
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f2f2f2);
+  border-bottom: 2px solid #e5e5e5;
+
+  text-align: center;
+}
+
+/* Title */
+.site-title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem); /* responsive size */
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Optional subtitle/description */
+.site-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.75;
+}
+
+/* Navigation (if you add it later) */
+.main-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  position: relative;
+}
+
+.main-navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.25s ease;
+}
+
+.main-navigation a:hover::after {
+  width: 100%;
+}
+
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .siteheader {
+    padding: 2rem 1rem;
+  }
+
+  .main-navigation ul {
+    gap: 1rem;
+  }
+}
